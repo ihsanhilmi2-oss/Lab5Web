@@ -1,0 +1,213 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum 5 - JavaScript Dasar</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 25px;
+            background: #f4f6f9;
+        }
+
+        section {
+            background: white;
+            padding: 18px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #2457a7;
+        }
+
+        button {
+            padding: 8px 12px;
+            margin: 4px;
+            cursor: pointer;
+        }
+
+        .hasil {
+            white-space: pre-line;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Praktikum 5: JavaScript Dasar</h1>
+
+<!-- LATIHAN 1 -->
+<section>
+    <h2>Latihan 1 - Menampilkan Output</h2>
+    <p id="pesan">Konten awal.</p>
+    <button onclick="latihan1()">Hello World</button>
+</section>
+
+<!-- LATIHAN 2 -->
+<section>
+    <h2>Latihan 2 - Alert dan Prompt</h2>
+    <button onclick="latihan2()">Masukkan Nama</button>
+    <p id="hasilNama"></p>
+</section>
+
+<!-- LATIHAN 3 -->
+<section>
+    <h2>Latihan 3 - Operasi Aritmetika</h2>
+    <input type="number" id="angkaA" placeholder="Bilangan pertama">
+    <input type="number" id="angkaB" placeholder="Bilangan kedua">
+    <button onclick="latihan3()">Hitung</button>
+    <p id="hasilAritmetika" class="hasil"></p>
+</section>
+
+<!-- LATIHAN 4 -->
+<section>
+    <h2>Latihan 4 - If Else</h2>
+    <input type="number" id="nilaiIf" placeholder="Nilai 0-100">
+    <button onclick="latihan4()">Periksa Nilai</button>
+    <p id="hasilIf"></p>
+</section>
+
+<!-- LATIHAN 5 -->
+<section>
+    <h2>Latihan 5 - Switch</h2>
+    <input type="number" id="pilihanSwitch" placeholder="Angka 1-5">
+    <button onclick="latihan5()">Tampilkan Bilangan</button>
+    <p id="hasilSwitch"></p>
+</section>
+
+<!-- LATIHAN 6 -->
+<section>
+    <h2>Latihan 6 - Genap atau Ganjil</h2>
+    <input type="number" id="bilangan" step="1"
+           placeholder="Masukkan bilangan bulat">
+    <button onclick="latihan6()">Periksa</button>
+    <p id="hasilBilangan"></p>
+</section>
+
+<!-- LATIHAN 7 -->
+<section>
+    <h2>Latihan 7 - Mengubah Warna</h2>
+    <button onclick="ubahWarna('lightgreen')">Hijau</button>
+    <button onclick="ubahWarna('white')">Putih</button>
+    <button onclick="ubahWarna('lightyellow')">Kuning</button>
+</section>
+
+<!-- LATIHAN 8 -->
+<section>
+    <h2>Latihan 8 - Menu Makanan</h2>
+
+    <label>
+        <input type="checkbox" class="menu" value="5000">
+        Ayam Goreng - Rp5.000
+    </label>
+    <br>
+
+    <label>
+        <input type="checkbox" class="menu" value="500">
+        Tempe - Rp500
+    </label>
+    <br>
+
+    <label>
+        <input type="checkbox" class="menu" value="2500">
+        Telur Dadar - Rp2.500
+    </label>
+    <br>
+
+    <p>Total: Rp<span id="total">0</span></p>
+</section>
+
+<!-- EKSPERIMEN 1 -->
+<section>
+    <h2>Eksperimen 1 - Operasi dengan Prompt</h2>
+    <button onclick="eksperimen1()">Masukkan Bilangan</button>
+    <p id="hasilEksperimen1" class="hasil"></p>
+</section>
+
+<!-- EKSPERIMEN 7 -->
+<section>
+    <h2>Eksperimen 7 - Perkalian 7</h2>
+    <button onclick="eksperimen7()">Tampilkan Tabel</button>
+    <p id="hasilPerkalian" class="hasil"></p>
+</section>
+
+<!-- EKSPERIMEN 8 -->
+<section>
+    <h2>Eksperimen 8 - Function Cek Genap</h2>
+    <input type="number" id="angkaGenap" step="1"
+           placeholder="Masukkan bilangan bulat">
+    <button onclick="eksperimen8()">Periksa</button>
+    <p id="hasilGenap"></p>
+</section>
+
+<!-- EKSPERIMEN 9 -->
+<section>
+    <h2>Eksperimen 9 - Validasi Nama</h2>
+    <form id="formEksperimen">
+        <input type="text" id="namaEksperimen" placeholder="Nama mahasiswa">
+        <button type="submit">Validasi</button>
+    </form>
+    <p id="hasilEksperimen9"></p>
+</section>
+
+<!-- EKSPERIMEN 10 -->
+<section>
+    <h2>Eksperimen 10 - Menu Tambahan</h2>
+    <label>
+        <input type="checkbox" class="menu" value="3000">
+        Nasi Putih - Rp3.000
+    </label>
+    <br>
+    <label>
+        <input type="checkbox" class="menu" value="2000">
+        Es Teh - Rp2.000
+    </label>
+    <p>Harga menu tambahan ikut dihitung pada total.</p>
+</section>
+
+<!-- EKSPERIMEN 11 -->
+<section>
+    <h2>Eksperimen 11 - Sembunyikan Teks</h2>
+    <p id="teksTambahan">Teks ini bisa disembunyikan.</p>
+    <button onclick="eksperimen11()">Sembunyikan / Tampilkan</button>
+</section>
+
+<!-- MINI PROJECT -->
+<section>
+    <h2>Mini Project - Kalkulator Nilai Mahasiswa</h2>
+
+    <form id="formNilai">
+        <label>Nilai Tugas:
+            <input type="number" id="nilaiTugas"
+                   min="0" max="100" step="any" required>
+        </label>
+        <br><br>
+
+        <label>Nilai UTS:
+            <input type="number" id="nilaiUTS"
+                   min="0" max="100" step="any" required>
+        </label>
+        <br><br>
+
+        <label>Nilai UAS:
+            <input type="number" id="nilaiUAS"
+                   min="0" max="100" step="any" required>
+        </label>
+        <br><br>
+
+        <button type="submit">Hitung Nilai</button>
+    </form>
+
+    <p id="hasilNilai" class="hasil"></p>
+</section>
+
+<!-- HUBUNGKAN KE JAVASCRIPT -->
+<script src="script.js"></script>
+
+</body>
+</html>
