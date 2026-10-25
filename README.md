@@ -72,7 +72,7 @@ Menggunakan `textContent` untuk mengubah teks pada halaman dan `console.log()` u
 
 **Hasil:** Teks Hello World ditampilkan pada halaman web dan Console.
 
-![Hasil Latihan 1](screenshots/latihan1.png)
+![Hasil Latihan 1](Screenshots/latihan1.png)
 
 ### Latihan 2 — Alert dan Prompt
 
@@ -80,7 +80,7 @@ Menggunakan `prompt()` untuk meminta nama pengguna dan `alert()` untuk menampilk
 
 **Hasil:** Program menampilkan sapaan jika nama diisi dan pesan peringatan jika nama kosong atau pengguna membatalkan input.
 
-![Hasil Latihan 2](screenshots/latihan2.png)
+![Hasil Latihan 2](Screenshots/latihan2.png)
 
 ### Latihan 3 — Function dan Operasi Aritmetika
 
@@ -88,7 +88,7 @@ Menggunakan function untuk menghitung penjumlahan, pengurangan, perkalian, pemba
 
 **Hasil:** Program menampilkan hasil operasi aritmetika pada halaman web.
 
-![Hasil Latihan 3](screenshots/latihan3.png)
+![Hasil Latihan 3](Screenshots/latihan3.png)
 
 ### Latihan 4 — Percabangan If-Else
 
@@ -96,7 +96,7 @@ Menggunakan `if-else` untuk menentukan kelulusan mahasiswa berdasarkan nilai min
 
 **Hasil:** Program menampilkan status Lulus, Belum lulus, atau Input nilai tidak valid.
 
-![Hasil Latihan 4](screenshots/latihan4.png)
+![Hasil Latihan 4](Screenshots/latihan4.png)
 
 ### Latihan 5 — Percabangan Switch
 
@@ -104,7 +104,7 @@ Menggunakan `switch` untuk menampilkan nama bilangan berdasarkan pilihan angka 1
 
 **Hasil:** Program menampilkan nama bilangan sesuai pilihan pengguna.
 
-![Hasil Latihan 5](screenshots/latihan5.png)
+![Hasil Latihan 5](Screenshots/latihan5.png)
 
 ### Latihan 6 — Bilangan Genap atau Ganjil
 
@@ -112,7 +112,7 @@ Menggunakan operator modulus (`%`) untuk memeriksa apakah bilangan yang dimasukk
 
 **Hasil:** Program menampilkan keterangan bilangan genap atau ganjil dan memvalidasi input bilangan bulat.
 
-![Hasil Latihan 6](screenshots/latihan6.png)
+![Hasil Latihan 6](Screenshots/latihan6.png)
 
 ### Latihan 7 — Mengubah Warna Halaman
 
@@ -120,7 +120,7 @@ Menggunakan function dengan parameter untuk mengubah warna latar halaman web.
 
 **Hasil:** Warna latar berubah sesuai tombol yang dipilih pengguna.
 
-![Hasil Latihan 7](screenshots/latihan7.png)
+![Hasil Latihan 7](Screenshots/latihan7.png)
 
 ### Latihan 8 — DOM dan Checkbox Menu Makanan
 
@@ -133,7 +133,7 @@ Daftar menu:
 
 **Hasil:** Total harga berubah otomatis ketika checkbox dicentang atau dilepas.
 
-![Hasil Latihan 8](screenshots/latihan8.png)
+![Hasil Latihan 8](Screenshots/latihan8.png)
 
 ## 7. Eksperimen Mandiri
 
@@ -141,37 +141,37 @@ Daftar menu:
 
 Meminta dua bilangan melalui `prompt()`, mengonversi input menjadi number, kemudian menghitung operasi aritmetika.
 
-![Hasil Eksperimen 1](screenshots/eksperimen1.png)
+![Hasil Eksperimen 1](Screenshots/eksperimen1.png)
 
 ### Eksperimen 7 — Tabel Perkalian Angka 7
 
 Menggunakan perulangan `for` untuk menampilkan tabel perkalian angka 7 dari 1 sampai 10.
 
-![Hasil Eksperimen 7](screenshots/eksperimen7.png)
+![Hasil Eksperimen 7](Screenshots/eksperimen7.png)
 
 ### Eksperimen 8 — Function Cek Genap
 
 Membuat function `cekGenap(angka)` yang mengembalikan `true` jika bilangan genap dan `false` jika bilangan ganjil.
 
-![Hasil Eksperimen 8](screenshots/eksperimen8.png)
+![Hasil Eksperimen 8](Screenshots/eksperimen8.png)
 
 ### Eksperimen 9 — Validasi Nama
 
 Memeriksa input nama agar tidak boleh kosong sebelum dinyatakan valid.
 
-![Hasil Eksperimen 9](screenshots/eksperimen9.png)
+![Hasil Eksperimen 9](Screenshots/eksperimen9.png)
 
 ### Eksperimen 10 — Menambahkan Pilihan Menu
 
 Menambahkan dua menu makanan, yaitu Nasi Putih dan Es Teh. Kedua menu menggunakan sistem perhitungan total harga yang sama dengan Latihan 8.
 
-![Hasil Eksperimen 10](screenshots/eksperimen10.png)
+![Hasil Eksperimen 10](Screenshots/eksperimen10.png)
 
 ### Eksperimen 11 — Menyembunyikan dan Menampilkan Elemen
 
 Menggunakan JavaScript untuk menyembunyikan atau menampilkan teks melalui tombol.
 
-![Hasil Eksperimen 11](screenshots/eksperimen11.png)
+![Hasil Eksperimen 11](Screenshots/eksperimen11.png)
 
 ## 8. Mini Project — Kalkulator Nilai Mahasiswa
 
