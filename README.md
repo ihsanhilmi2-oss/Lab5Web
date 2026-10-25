@@ -198,7 +198,7 @@ Status kelulusan ditentukan dengan batas nilai akhir minimal 60.
 
 **Hasil:** Program menampilkan nilai akhir, predikat, dan status kelulusan serta memvalidasi nilai agar berada pada rentang 0–100.
 
-![Hasil Mini Project](screenshots/mini-project.png)
+![Hasil Mini Project](Screenshots/mini-project.png)
 
 ## 9. Cara Menjalankan Program
 
